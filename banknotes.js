@@ -27,6 +27,6 @@ const notes = [100, 50, 20, 10, 5, 2, 1];
 for (let i = 0; i < notes.length; i++) {
 let count = Math.floor(amount / notes[i]);//tells how many of that note we can use.notes[i] gives the current note (starting from 100).
 console.log(`${count} nota(s) de R$ ${notes[i]},00`);
-amount = amount - (count * notes[i])
+amount = amount - (count * notes[i]);
 //amount = amount % notes[i];
 }
