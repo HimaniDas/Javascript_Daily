@@ -17,9 +17,9 @@
 
 var input = require('fs').readFileSync('input.txt', 'utf8');
 var lines = input.split('\n');
-let age = parseInt(lines[0]);
-let years = Math.floor(age/365);//divide total days by 365 to get full years.
-let days = age % 365;//the remaining days after removing the full years.
+let age_in_days = parseInt(lines[0]);
+let years = Math.floor(age_in_days/365);//divide total days by 365 to get full years.
+let days = age_in_days % 365;//the remaining days after removing the full years.
 let months = Math.floor(days/30);//Converts remaining days to months, assuming 30 days per month.
 days = days % 30;//Calculates the remaining days after full months.
 console.log(`${years} ano(s)`);
