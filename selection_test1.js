@@ -20,7 +20,8 @@ if (
   (C + D) > (A + B) && // Sum of C and D must be greater than sum of A and B
   C > 0 && // Both C and D must be positive
   D > 0 &&
-  A % 2 === 0 //A must be even (because % 2 === 0 means divisible by 2)
+  A % 2 == 0 //A must be even compares two numbers 
+  // A % 2 === 0 // (because % 2 === 0 means divisible by 2)
 ) 
 {
   console.log("Valores aceitos");
