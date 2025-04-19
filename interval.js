@@ -20,14 +20,14 @@ var input = require('fs').readFileSync('input.txt', 'utf8');
 var lines = input.split('\n');
 let number = parseFloat(lines[0]);
 
-if (number < 0 || number > 100) {
+if (number < 0 || number > 100) { //If the number is less than 0 or greater than 100, it's outside all the valid intervals.
   console.log("Fora de intervalo");
-} else if (number >= 0 && number <= 25) {
+} else if (number >= 0 && number <= 25) { //This checks if the number is between 0 and 25, inclusive.
   console.log("Intervalo [0,25]");
-} else if (number > 25 && number <= 50) {
+} else if (number > 25 && number <= 50) { //This checks if the number is greater than 25 but less than or equal to 50.
   console.log("Intervalo (25,50]");
-} else if (number > 50 && number <= 75) {
+} else if (number > 50 && number <= 75) { //Checks for numbers between 50 and 75, excluding 50.
   console.log("Intervalo (50,75]");
-} else if (number > 75 && number <= 100) {
+} else if (number > 75 && number <= 100) { //Checks for numbers greater than 75 and up to 100.
   console.log("Intervalo (75,100]");
 }
