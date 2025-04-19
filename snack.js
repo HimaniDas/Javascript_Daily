@@ -18,13 +18,17 @@ let price = 0;
 
 if (code === 1) {
   price = 4.00;
-} else if (code === 2) {
+} 
+else if (code === 2) {
   price = 4.50;
-} else if (code === 3) {
+} 
+else if (code === 3) {
   price = 5.00;
-} else if (code === 4) {
+} 
+else if (code === 4) {
   price = 2.00;
-} else if (code === 5) {
+} 
+else if (code === 5) {
   price = 1.50;
 }
 
