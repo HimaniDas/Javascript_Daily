@@ -26,19 +26,22 @@ let [n1, n2, n3, n4] = lines[0].split(' ').map(Number);
 let average = ((n1 * 2) + (n2 * 3) + (n3 * 4) + (n4 * 1)) / 10;
 console.log(`Media: ${average.toFixed(1)}`);
 
-if (average >= 7.0) {
+if (average >= 7.0) { //If average is 7.0 or more → student is approved.
     console.log("Aluno aprovado.");
-} else if (average < 5.0) {
+} 
+else if (average < 5.0) { //If average is less than 5.0 → student is failed.
     console.log("Aluno reprovado.");
-} else {
-    console.log("Aluno em exame.");
+} 
+else {
+    console.log("Aluno em exame.");//If average is between 5.0 and 6.9, inclusive → student must take an exam.
     const examScore = parseFloat(lines[1]);
     console.log(`Nota do exame: ${examScore.toFixed(1)}`);
     const finalAverage = (average + examScore) / 2;
-    if (finalAverage >= 5.0) {
+    if (finalAverage >= 5.0) { //If final average is 5.0 or more → student is approved.
         console.log("Aluno aprovado.");
-    } else {
-        console.log("Aluno reprovado.");
+    } 
+    else {
+        console.log("Aluno reprovado.");//Else → student is failed.
     }
     console.log(`Media final: ${finalAverage.toFixed(1)}`);
 }
