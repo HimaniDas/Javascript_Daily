@@ -11,3 +11,15 @@ if (A < B + C && B < A + C && C < A + B) {
     let area = ((A + B) * C) / 2;
     console.log(`Area = ${area.toFixed(1)}`);
 }
+
+//A triangle is possible if the sum of any two sides is greater than the third.
+
+//That means:
+
+//A < B + C
+//B < A + C
+//C < A + B
+//If it's a triangle → print Perimeter = X.X
+
+//Else → treat it as a trapezium and calculate:
+//Area = ((A + B) * C) / 2
