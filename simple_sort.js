@@ -31,4 +31,4 @@ original.forEach(num => console.log(num)); //Prints the original numbers in the 
 
 
 
-//forEach is a built-in array method in JavaScript that allows you to loop through each element in an array and do something with it.
+//forEach is a built-in array method in JavaScript that allows to loop through each element in an array and do something with it.
