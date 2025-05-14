@@ -20,7 +20,7 @@ var input = require('fs').readFileSync('input.txt', 'utf8');
 var lines = input.split('\n');
 let numbers = lines[0].split(' ').map(Number);
 
-let original = [...numbers]; // Copy for original order, //This makes a copy of the original array using the spread operator ... We need this because we will sort numbers but still want to remember the original order.
+let original = [...numbers]; //This makes a copy of the original array using the spread operator ... We need this because we will sort numbers but still want to remember the original order.
 let sorted = [...numbers].sort((a, b) => a - b); // Ascending sort, We again use the spread operator to avoid changing the original. .sort((a, b) => a - b) sorts the array numerically in ascending order. Without (a, b) => a - b, JavaScript sorts alphabetically by default, which wouldn't work for numbers.
 
 sorted.forEach(num => console.log(num));//Prints each number in the sorted array, one per line.
