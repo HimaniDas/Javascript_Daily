@@ -22,7 +22,7 @@ var X = parseInt(lines[0]);
 let count = 0;
 
 while (count < 6) {
-    if (X % 2 !== 0) {
+    if (X % 2 !== 0) { //Checks if (X % 2 !== 0) → means it's odd.If odd: print it and increase count.In any case, increase X to move to the next number.
         console.log(X);
         count++;
     }
