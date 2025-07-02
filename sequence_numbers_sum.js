@@ -13,6 +13,15 @@ Input Sample
 Output Sample
 2 3 4 5 Sum=14
 3 4 5 6 Sum=18
+
+Reads all lines from input.txt.
+Splits each line into numbers m and n.
+Stops reading if either is ≤ 0.
+Otherwise:
+Loops from the smaller to the larger number.
+Builds the sequence string and calculates the sum.
+Outputs as required.
+
 */
 
 var input = require('fs').readFileSync('input.txt', 'utf8');
