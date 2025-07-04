@@ -30,7 +30,9 @@ for (let i = 0; i < lines.length; i++) {
     if (password == 2002) {
         console.log("Acesso Permitido");
         break;
-    } else {
+    } 
+    else 
+    {
         console.log("Senha Invalida");
     }
 }
