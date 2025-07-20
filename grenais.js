@@ -61,11 +61,11 @@ while (i < lines.length) {
     let option;
     while (i < lines.length) {
         option = lines[i++];
-        if (option === 1 || option === 2) break;
+        if (option == 1 || option == 2) break;
         console.log("Novo grenal (1-sim 2-nao)");
     }
 
-    if (option === 2) break;
+    if (option == 2) break;
 }
 
 console.log(`${total} grenais`);
