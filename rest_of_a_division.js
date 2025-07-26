@@ -25,7 +25,7 @@ const min = Math.min(x, y);
 const max = Math.max(x, y);
 
 for (let i = min + 1; i < max; i++) {
-    if (i % 5 === 2 || i % 5 === 3) {
+    if (i % 5 == 2 || i % 5 == 3) {
         console.log(i);
     }
 }
