@@ -26,12 +26,12 @@ var input = require('fs').readFileSync('input.txt', 'utf8');
 var lines = input.trim().split('\n').map(Number);
 
 for (let X of lines) {
-    if (X == 0) break;
+    if (X == 0) break;// stop when 0 is found
 
     let line = "";
     for (let i = 1; i <= X; i++) {
         line += i;
-        if (i < X) line += " "; 
+        if (i < X) line += " "; // add space only between numbers
     }
     console.log(line);
 }
